@@ -6,11 +6,11 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
 import {Ecommerce, Orders, Calendar, Employees, Stacked,
 Pyramid, Customers, Kanban, Area, Bar, Pie, Financial,
-ColorPicker, ColorMapping, Editor  } from './pages';
+ColorPicker, ColorMapping, Editor, Line  } from './pages';
 import './App.css'
 
 const App = () => {
-  const activeMenu = false;
+  const activeMenu = true;
   return (
     <div>
       <BrowserRouter>
@@ -47,14 +47,14 @@ const App = () => {
               <div className='fixed md:static
               bg-main-bg dark:db-main-dark-bg
               navbar w-full'>
-                <NavBar />
+                <Navbar />
               </div>
             </div>
             <div>
               <Routes>
                 {/* Dashboard */}
-                <Route path='/' element={<ECommerce />} />
-                <Route path='/ecommerce' element={<ECommerce />} />
+                <Route path='/' element={<Ecommerce />} />
+                <Route path='/ecommerce' element={<Ecommerce />} />
                 {/* Pages */}
                 <Route path='/orders' element={<Orders />} />
                 <Route path='/employees' element={<Employees />} />
