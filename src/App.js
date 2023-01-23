@@ -52,7 +52,6 @@ const App = () => {
               navbar w-full'>
                 <Navbar />
               </div>
-            </div>
             <div>
               <Routes>
                 {/* Dashboard */}
@@ -77,6 +76,7 @@ const App = () => {
                 <Route path='/stacked' element={<Stacked />} />
               </Routes>
             </div>
+        </div>
         </div>
       </BrowserRouter>
     </div>
