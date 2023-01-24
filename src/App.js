@@ -55,25 +55,25 @@ const App = () => {
             <div>
               <Routes>
                 {/* Dashboard */}
-                <Route path='/' element={<Ecommerce />} />
-                <Route path='/ecommerce' element={<Ecommerce />} />
+                <Route path='/Project_Dashboard' element={<Ecommerce />} />
+                <Route path='/Project_Dashboard/ecommerce' element={<Ecommerce />} />
                 {/* Pages */}
-                <Route path='/orders' element={<Orders />} />
-                <Route path='/employees' element={<Employees />} />
-                <Route path='/customers' element={<Customers />} />
+                <Route path='/Project_Dashboard/orders' element={<Orders />} />
+                <Route path='/Project_Dashboard/employees' element={<Employees />} />
+                <Route path='/Project_Dashboard/customers' element={<Customers />} />
                 {/* Apps */}
-                <Route path='/kanban' element={<Kanban />} />
-                <Route path='/editor' element={<Editor />} />
-                <Route path='/calendar' element={<Calendar />} />
-                <Route path='/color-picker' element={<ColorPicker />} />
+                <Route path='/Project_Dashboard/kanban' element={<Kanban />} />
+                <Route path='/Project_Dashboard/editor' element={<Editor />} />
+                <Route path='/Project_Dashboard/calendar' element={<Calendar />} />
+                <Route path='/Project_Dashboard/color-picker' element={<ColorPicker />} />
                 {/* Charts */}
-                <Route path='/line' element={<Line />} />
-                <Route path='/area' element={<Area />} />
-                <Route path='/bar' element={<Bar />} />
-                <Route path='/pie' element={<Pie />} />
-                <Route path='/financial' element={<Financial />} />
-                <Route path='/pyramid' element={<Pyramid />} />
-                <Route path='/stacked' element={<Stacked />} />
+                <Route path='/Project_Dashboard/line' element={<Line />} />
+                <Route path='/Project_Dashboard/area' element={<Area />} />
+                <Route path='/Project_Dashboard/bar' element={<Bar />} />
+                <Route path='/Project_Dashboard/pie' element={<Pie />} />
+                <Route path='/Project_Dashboard/financial' element={<Financial />} />
+                <Route path='/Project_Dashboard/pyramid' element={<Pyramid />} />
+                <Route path='/Project_Dashboard/stacked' element={<Stacked />} />
               </Routes>
             </div>
         </div>
