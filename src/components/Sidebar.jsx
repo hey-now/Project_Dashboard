@@ -8,7 +8,7 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const Sidebar = () => {
   const { activeMenu, setActiveMenu, screenSize } = useStateContext();
-  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2';
+  const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2 bg-teal-300';
   const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2';
   const handleCloseSidebar = () => {
     if(activeMenu && screenSize <= 900) {
@@ -22,7 +22,7 @@ const Sidebar = () => {
       {activeMenu && (<>
         <div className='flex justify-between
         items-center'>
-          <Link to='/' 
+          <Link to='/Project_Dashboard' 
           onClick={handleCloseSidebar}
           className='items-center gap-3 ml-3 
           mt-4 flex text-xl font-extrabold 
@@ -52,11 +52,12 @@ const Sidebar = () => {
               </p>
               {item.links.map((link) => (
                 <NavLink
-                  to={`/${link.name}`}
-                  key={link.name}
+                  to={`/Project_Dashboard/${link.name}`}
+                  key={`/Project_Dashboard/${link.name}`}
                   onClick={handleCloseSidebar}
                   className={({ isActive }) => 
-                  isActive ? activeLink : normalLink}
+                  isActive ? activeLink : normalLink
+                  }
                 >
                   {link.icon}
                   <span className='capitalize'>
